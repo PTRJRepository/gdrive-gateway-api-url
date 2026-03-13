@@ -34,7 +34,7 @@ bun dev
 bun start
 ```
 
-Default port adalah `3000`.
+Default port adalah `5178`.
 
 ## API Endpoints
 

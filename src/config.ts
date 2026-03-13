@@ -9,6 +9,6 @@ const defaultFolderId = folderIdMatch ? folderIdMatch[1] : null;
 export const config = {
   serviceAccountPath: path.resolve(import.meta.dir, "../_services_account/secret_key.json"),
   scopes: ["https://www.googleapis.com/auth/drive"],
-  port: process.env.PORT || 3000,
+  port: process.env.PORT || 5178,
   defaultFolderId,
 };

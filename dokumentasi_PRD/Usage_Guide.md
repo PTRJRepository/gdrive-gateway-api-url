@@ -35,7 +35,7 @@ bun dev
 # Mode Production
 bun start
 ```
-Server akan berjalan di `http://localhost:3000`.
+Server akan berjalan di `http://localhost:5178`.
 
 ## 3. Melakukan Testing
 
@@ -51,16 +51,16 @@ Gunakan script testing yang sudah disediakan untuk memverifikasi fungsi utama:
 
 ### Upload File
 ```bash
-curl -X POST http://localhost:3000/upload \
+curl -X POST http://localhost:5178/upload \
   -F "file=@/path/to/your/document.pdf"
 ```
 
 ### Cari File
 ```bash
-curl "http://localhost:3000/search?q=statistik"
+curl "http://localhost:5178/search?q=statistik"
 ```
 
 ### Download File
 ```bash
-curl -O -J http://localhost:3000/download/FILE_ID_GDIVE
+curl -O -J http://localhost:5178/download/FILE_ID_GDIVE
 ```
