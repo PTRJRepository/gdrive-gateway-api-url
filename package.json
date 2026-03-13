@@ -1,0 +1,24 @@
+{
+  "name": "upload-read-gdrive-gateway",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "test:connection": "bun _dev_utils/tests/test_connection.ts",
+    "test:upload": "bun _dev_utils/tests/test_upload.ts",
+    "test:search": "bun _dev_utils/tests/test_search.ts",
+    "test:download": "bun _dev_utils/tests/test_download.ts",
+    "test:target": "bun _dev_utils/tests/test_target_folder.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "elysia": "^1.4.27",
+    "googleapis": "^171.4.0"
+  }
+}
